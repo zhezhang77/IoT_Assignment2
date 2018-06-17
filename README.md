@@ -38,4 +38,13 @@ topic iot-2/type/+/id/+/cmd/+/fmt/+ in  iot-2/type/+/id/+/cmd/+/fmt/+
 topic iot-2/type/+/id/+/evt/+/fmt/+ out iot-2/type/+/id/+/evt/+/fmt/+
 connection_messages true
 
-7.
+7. Install Bluepy on Pi
+sudo apt-get -y install bluez build-essential libglib2.0-dev libdbus-1-dev python-dev
+sudo pip install bluepy
+
+8. MAC address f SensorTag
+54:6C:0E:53:19:84 CC2650 SensorTag
+
+9. Run sensortagcollector_iot.py
+
+
