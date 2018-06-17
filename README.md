@@ -48,4 +48,8 @@ sudo pip install bluepy
 9. Run sensortagcollector_iot.py
 
 10. Install paho
-pip install paho-mqtt
+git clone https://github.com/eclipse/paho.mqtt.python.git
+cd paho.mqtt.python
+python setup.py install
+
+11. Modify node-red
