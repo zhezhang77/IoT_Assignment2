@@ -47,4 +47,5 @@ sudo pip install bluepy
 
 9. Run sensortagcollector_iot.py
 
-
+10. Install paho
+pip install paho-mqtt
