@@ -46,10 +46,12 @@ sudo pip install bluepy
 54:6C:0E:53:19:84 CC2650 SensorTag
 
 9. Run sensortagcollector_iot.py
+web - https://developer.ibm.com/recipes/tutorials/connecting-multiple-ti-sensortags-to-iot-platfom-using-a-raspberry-pi-gateway/
+download - https://ibm.box.com/shared/static/pwkgxejzk92ktjn53owm1ka6bom9o0oq.zip
 
 10. Install paho
 git clone https://github.com/eclipse/paho.mqtt.python.git
 cd paho.mqtt.python
-python setup.py install
+sudo python setup.py install
 
 11. Modify node-red
