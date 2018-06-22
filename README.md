@@ -19,24 +19,7 @@ apt-get install mosquitto
 apt-get install mosquitto-clients  
 
 6. Configure mosquitto as a bridge  
-
-log_type debug  
-user myUser  
-
-connection bridge-to-watsoniot  
-address 7yivmi.messaging.internetofthings.ibmcloud.com:1883  
-cleansession true  
-try_private false  
-bridge_attempt_unsubscribe false  
-notifications false  
-notification_topic iot-2/type/raspberrypi/id/e84e064bb047/evt/status/fmt/raw  
-remote_username use_token-auth  
-remote_password DD-En+smI?&4s_9A0M  
-remote_clientid g:7yivmi:raspberrypi:e84e064bb047  
-notifications true  
-topic iot-2/type/+/id/+/cmd/+/fmt/+ in  iot-2/type/+/id/+/cmd/+/fmt/+  
-topic iot-2/type/+/id/+/evt/+/fmt/+ out iot-2/type/+/id/+/evt/+/fmt/+  
-connection_messages true  
+mosquitto -c /etc/mosquitto/conf.d/AWS_gateway.conf -v  
 
 7. Install Bluepy on Pi  
 sudo apt-get -y install bluez build-essential libglib2.0-dev libdbus-1-dev python-dev  
